@@ -15,7 +15,6 @@ btn.addEventListener('click', (e) => {
 	inptVal = inpt.value;
 
 	url = `https://api.openweathermap.org/data/2.5/weather?q=${inptVal}&appid=${api}`;
-	console.log(url);
 	fetch(url)
 		.then(response => response.json())
 		.then(json => {
